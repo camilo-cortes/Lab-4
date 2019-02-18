@@ -8,29 +8,34 @@
 	<h1>Volunteer Form</h1>
 	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
 		<fieldset>
-			<strong>My Info</strong><br>
-			First Name: <input type="text" name="first_name_field"><br>
-			Last Name: <input type="text" name="last_name_field"><br>
-			Phone Number: <input type="text" name="phone_field"><br>
-			Email Address: <input type="text" name="email_field"><br>
+			<p><strong>My Info</strong></p>
+			<input type="hidden" name="hidden_field" value="ccortes2@hawk.iit.edu">
+			<p><label>First Name: <input type="text" name="first_name_field"></label></p>
+			<p><label>Last Name: <input type="text" name="last_name_field"></label></p>
+			<p><label>Phone Number: <input type="text" name="phone_field"></label></p>
+			<p><label>Email Address: <input type="text" name="email_field"></label></p>
 			Gender: <input type="radio" name="gender_field" value="Male"> Male
 			<input type="radio" name="gender_field" value="Female"> Female<br>
-			Age: <select name="age_field">
-				<option value="under 18">Under 18</option>
-				<option value="18 - 24">18 - 24</option>
-				<option value="25 - 34">25 - 34</option>
-				<option value="35 - 44">35 - 44</option>
-				<option value="45 - 54">45 - 54</option>
-				<option value="55 - 64">55 - 64</option>
-				<option value="65 and over">65 and over</option>
-			</select>
+			
+			 <p><label>Age:
+			 	<select name="age_field">
+					<option value="under 18">Under 18</option>
+					<option value="18 - 24">18 - 24</option>
+					<option value="25 - 34">25 - 34</option>
+					<option value="35 - 44">35 - 44</option>
+					<option value="45 - 54">45 - 54</option>
+					<option value="55 - 64">55 - 64</option>
+					<option value="65 and over">65 and over</option>
+				</select>
+				</label>
+			</p>
 		</fieldset>
 		<p></p>
 
-		<strong>My Availability</strong>
+		<p><strong>My Availability</strong></p>
 
 		<fieldset>
-			Days Available:<br>
+			<p>Days Available:</p>
 			<input type="checkbox" name="available_field[]" value="Sunday">Sunday<br>
 			<input type="checkbox" name="available_field[]" value="Monday">Monday<br>
 			<input type="checkbox" name="available_field[]" value="Tuesday">Tuesday<br>
@@ -38,14 +43,12 @@
 			<input type="checkbox" name="available_field[]" value="Thursday">Thursday<br>
 			<input type="checkbox" name="available_field[]" value="Friday">Friday<br>
 			<input type="checkbox" name="available_field[]" value="Saturday">Saturday<br>
-			Any Comments?<br>
+			<p>Any Comments?</p>
 			<textarea name="comments_field" rows="10" cols="30"></textarea>
 		</fieldset>
 
-		<fieldset>
-			<input type="hidden" name="hidden_field" value="ccortes2@hawk.iit.edu">
-			<input type="submit" name="Submit">
-		</fieldset>
+		<input type="submit" name="Submit">
+		
 	</form>
 </body>
 </html>
